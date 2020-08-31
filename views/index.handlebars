@@ -1,0 +1,30 @@
+<div class="fea-gd-vv row">
+    {{#each userdetails}}
+    <div class="col-lg-6 mt-lg-0 mt-4">
+        <div class="float-mid feature-gd" style="border-style: solid; padding">
+            <form action="/contact" method="POST">
+                <div class="form-group">
+                    <label for="">{{dataValues.firstname}} {{dataValues.lastname}}</label>
+                </div>
+                <div class="form-group">
+                    <label for="">Skills Set :</label>
+                    <p>{{dataValues.skillset}}</p>
+                </div>
+                <div class="form-group">
+                    <label for="">Experience :</label>
+                    <p>{{dataValues.experiences}}</p>
+                </div>
+                <div class="form-group">
+                    <label for="">Hobby :</label>
+                    <p>{{dataValues.hobby}}</p>
+                </div>
+                <div class="form-group">
+                    <label for="">Achievement :</label>
+                    <p>{{dataValues.achievement}}</p>
+                </div>
+                <button type="submit" class="btn btn-primary">Contact</button>
+            </form>
+        </div>
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZenZhiin</title>
+	    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="icon" type="image/png" href="/assets/img/zen.png">
+</head>
+
+<body>
+	<div class="zen-header" id="home">
+		<nav class="navbar navbar-expand-lg navbar-light py-3">
+			<div class="container">
+					<a class="navbar-brand" href="/">
+						<img src="/assets/img/logo/logo-200.png" alt="ZenZhiin"></img>
+					</a>
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+						data-target="#headerContent" aria-controls="headerContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<!-- <span class="navbar-toggler-icon"></span> -->
+						<span class="fa icon-expand fa-bars"></span>
+						<span class="fa icon-close fa-times"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="headerContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+							{{#if session.userID}}
+							<li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+							<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+							{{else}}
+							<li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+							{{/if}}
+						</ul>
+					</div>
+			</div>
+		</nav>
+	</div>
+
+	<section class="zen-contain">
+			{{{ body }}}
+	</section>
+	<footer class="zen-footer zen-copyright">
+		<div class="container">
+			<div class="row bottom-copies">
+				<p class="copy-footer-29">© 2019 - 2020 ZenZhiin. All right reserved.</p>
+
+				<div class="col-lg-4 main-social-footer-29">
+					<a target="_blank" href="https://www.facebook.com/zenzhiin/" class="facebook" target="_blank"><span class="fa fa-facebook"></span></a>
+					<a target="_blank" href="https://www.linkedin.com/company/zenzhiin/"  class="linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+				</div>
+			</div>
+		</div>
+    </footer>
+</body>
+
+</html>

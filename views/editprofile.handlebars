@@ -1,0 +1,40 @@
+<div class="container p-5">
+    <div class="row">
+        <form action="/editprofile" method="POST">
+            <h2 class="text-center">Profile</h2>
+            <div class="form-group">
+              <label for="_firstname">First Name</label>
+              <input type="text" name="firstname" id="_firstname" class="form-control" placeholder="First Name" value="{{userdetails.dataValues.firstname}}" required>
+            </div>
+            <div class="form-group">
+              <label for="_lastname">Last Name</label>
+              <input type="text" name="lastname" id="_lastname" class="form-control" placeholder="Last Name" value="{{userdetails.dataValues.lastname}}" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="_email" class="form-control" placeholder="Email" value="{{userdetails.dataValues.email}}" required>
+            </div>
+            <div class="form-group">
+              <label for="_phone">Phone</label>
+              <input type="text" name="phone" id="_phone" class="form-control" placeholder="Phone" value="{{userdetails.dataValues.phone}}" required>
+            </div>
+            <div class="form-group">
+              <label for="_experiences">Experiences</label>
+              <textarea name="experiences" id="_experiences" class="form-control"  value="{{userdetails.dataValues.experiences}}"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="_skillset">Skill Set</label>
+              <textarea name="skillset" id="skillset" class="form-control"  value="{{userdetails.dataValues.skillset}}" > </textarea>
+            </div>  
+            <div class="form-group">
+              <label for="_hobby">Hobby</label>
+              <textarea name="hobby" id="_hobby" class="form-control"  value="{{userdetails.dataValues.hobby}}"> </textarea>
+            </div>
+            <div class="form-group">
+              <label for="_achievement">Achievement</label>
+              <textarea name="achievement" id="_achievement" class="form-control"  value="{{userdetails.dataValues.achievement}}"> </textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
